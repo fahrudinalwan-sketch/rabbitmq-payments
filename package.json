@@ -1,0 +1,14 @@
+{
+  "name": "rabbitmq-payments",
+  "version": "1.0.0",
+  "description": "1 Producer + 2 Consumer dengan Topic Exchange, Retry (TTL) dan DLX",
+  "scripts": {
+    "setup": "node src/setup.js",
+    "producer": "node src/producer.js",
+    "consumer:a": "node src/consumerA.js",
+    "consumer:b": "node src/consumerB.js"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.4"
+  }
+}
